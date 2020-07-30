@@ -17,7 +17,18 @@ namespace XFSimpleCalculator.ViewModels
             this._logger = logger;
         }
 
-        public ICommand NumberPressedCommand => new Command<string>((param)=> {
+        public ICommand NumberPressedCommand => new Command<string>((param) =>
+        {
+            this._logger?.LogInformation($"{param} pressed.");
+        });
+
+        public ICommand OperatorPressedCommand => new Command<string>((param) =>
+        {
+            this._logger?.LogInformation($"{param} pressed.");
+        });
+
+        public ICommand CalculatorFunctionPressedCommand => new Command<string>((param) =>
+        {
             this._logger?.LogInformation($"{param} pressed.");
         });
     }
