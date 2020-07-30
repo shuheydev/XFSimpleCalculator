@@ -18,135 +18,134 @@
             MaterialBlurStyle="Light"
             MaterialTheme="AcrylicBlur">
             <Grid
-                ColumnDefinitions="3*,1*"
                 ColumnSpacing="0"
                 RowDefinitions="1*,1.5*"
                 RowSpacing="0">
-                <Grid
-                    Grid.Row="1"
-                    Grid.Column="0"
-                    BackgroundColor="LightBlue"
-                    ColumnDefinitions="1*,1*,1*"
-                    RowDefinitions="1*,1*,1*,1*,1*">
-                    <Button
-                        Grid.Row="0"
+                <Grid Grid.Row="1" ColumnDefinitions="3*,1*">
+                    <Grid
                         Grid.Column="0"
-                        Command="{Binding OperatorPressedCommand}"
-                        CommandParameter="%"
-                        Text="%" />
-                    <Button
-                        Grid.Row="0"
+                        BackgroundColor="LightBlue"
+                        ColumnDefinitions="1*,1*,1*"
+                        RowDefinitions="1*,1*,1*,1*,1*">
+                        <Button
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Command="{Binding OperatorPressedCommand}"
+                            CommandParameter="%"
+                            Text="%" />
+                        <Button
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Command="{Binding CalculatorFunctionPressedCommand}"
+                            CommandParameter="CE"
+                            Text="CE" />
+                        <Button
+                            Grid.Row="0"
+                            Grid.Column="2"
+                            Command="{Binding CalculatorFunctionPressedCommand}"
+                            CommandParameter="C"
+                            Text="C" />
+                        <Button
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Command="{Binding NumberPressedCommand}"
+                            CommandParameter="7"
+                            Text="7" />
+                        <Button
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Command="{Binding NumberPressedCommand}"
+                            CommandParameter="8"
+                            Text="8" />
+                        <Button
+                            Grid.Row="1"
+                            Grid.Column="2"
+                            Command="{Binding NumberPressedCommand}"
+                            CommandParameter="9"
+                            Text="9" />
+                        <Button
+                            Grid.Row="2"
+                            Grid.Column="0"
+                            Command="{Binding NumberPressedCommand}"
+                            CommandParameter="4"
+                            Text="4" />
+                        <Button
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            Command="{Binding NumberPressedCommand}"
+                            CommandParameter="5"
+                            Text="5" />
+                        <Button
+                            Grid.Row="2"
+                            Grid.Column="2"
+                            Command="{Binding NumberPressedCommand}"
+                            CommandParameter="6"
+                            Text="6" />
+                        <Button
+                            Grid.Row="3"
+                            Grid.Column="0"
+                            Command="{Binding NumberPressedCommand}"
+                            CommandParameter="1"
+                            Text="1" />
+                        <Button
+                            Grid.Row="3"
+                            Grid.Column="1"
+                            Command="{Binding NumberPressedCommand}"
+                            CommandParameter="2"
+                            Text="2" />
+                        <Button
+                            Grid.Row="3"
+                            Grid.Column="2"
+                            Command="{Binding NumberPressedCommand}"
+                            CommandParameter="3"
+                            Text="3" />
+                        <Button
+                            Grid.Row="4"
+                            Grid.Column="0"
+                            IsVisible="false"
+                            Text="" />
+                        <Button
+                            Grid.Row="4"
+                            Grid.Column="1"
+                            Command="{Binding NumberPressedCommand}"
+                            CommandParameter="0"
+                            Text="0" />
+                        <Button
+                            Grid.Row="4"
+                            Grid.Column="2"
+                            IsVisible="false"
+                            Text="." />
+                    </Grid>
+                    <Grid
                         Grid.Column="1"
-                        Command="{Binding CalculatorFunctionPressedCommand}"
-                        CommandParameter="CE"
-                        Text="CE" />
-                    <Button
-                        Grid.Row="0"
-                        Grid.Column="2"
-                        Command="{Binding CalculatorFunctionPressedCommand}"
-                        CommandParameter="C"
-                        Text="C" />
-                    <Button
-                        Grid.Row="1"
-                        Grid.Column="0"
-                        Command="{Binding NumberPressedCommand}"
-                        CommandParameter="7"
-                        Text="7" />
-                    <Button
-                        Grid.Row="1"
-                        Grid.Column="1"
-                        Command="{Binding NumberPressedCommand}"
-                        CommandParameter="8"
-                        Text="8" />
-                    <Button
-                        Grid.Row="1"
-                        Grid.Column="2"
-                        Command="{Binding NumberPressedCommand}"
-                        CommandParameter="9"
-                        Text="9" />
-                    <Button
-                        Grid.Row="2"
-                        Grid.Column="0"
-                        Command="{Binding NumberPressedCommand}"
-                        CommandParameter="4"
-                        Text="4" />
-                    <Button
-                        Grid.Row="2"
-                        Grid.Column="1"
-                        Command="{Binding NumberPressedCommand}"
-                        CommandParameter="5"
-                        Text="5" />
-                    <Button
-                        Grid.Row="2"
-                        Grid.Column="2"
-                        Command="{Binding NumberPressedCommand}"
-                        CommandParameter="6"
-                        Text="6" />
-                    <Button
-                        Grid.Row="3"
-                        Grid.Column="0"
-                        Command="{Binding NumberPressedCommand}"
-                        CommandParameter="1"
-                        Text="1" />
-                    <Button
-                        Grid.Row="3"
-                        Grid.Column="1"
-                        Command="{Binding NumberPressedCommand}"
-                        CommandParameter="2"
-                        Text="2" />
-                    <Button
-                        Grid.Row="3"
-                        Grid.Column="2"
-                        Command="{Binding NumberPressedCommand}"
-                        CommandParameter="3"
-                        Text="3" />
-                    <Button
-                        Grid.Row="4"
-                        Grid.Column="0"
-                        IsVisible="false"
-                        Text="" />
-                    <Button
-                        Grid.Row="4"
-                        Grid.Column="1"
-                        Command="{Binding NumberPressedCommand}"
-                        CommandParameter="0"
-                        Text="0" />
-                    <Button
-                        Grid.Row="4"
-                        Grid.Column="2"
-                        IsVisible="false"
-                        Text="." />
-                </Grid>
-                <Grid
-                    Grid.Row="1"
-                    Grid.Column="1"
-                    BackgroundColor="LightPink"
-                    RowDefinitions="1*,1*,1*,1*,1*">
-                    <Button
-                        Grid.Row="0"
-                        Command="{Binding OperatorPressedCommand}"
-                        CommandParameter="/"
-                        Text="/" />
-                    <Button
-                        Grid.Row="1"
-                        Command="{Binding OperatorPressedCommand}"
-                        CommandParameter="*"
-                        Text="*" />
-                    <Button
-                        Grid.Row="2"
-                        Command="{Binding OperatorPressedCommand}"
-                        CommandParameter="-"
-                        Text="-" />
-                    <Button
-                        Grid.Row="3"
-                        Command="{Binding OperatorPressedCommand}"
-                        CommandParameter="+"
-                        Text="+" />
-                    <Button
-                        Grid.Row="4"
-                        Command="{Binding OperatorPressedCommand}"
-                        CommandParameter="="
-                        Text="=" />
+                        BackgroundColor="LightPink"
+                        RowDefinitions="1*,1*,1*,1*,1*">
+                        <Button
+                            Grid.Row="0"
+                            Command="{Binding OperatorPressedCommand}"
+                            CommandParameter="/"
+                            Text="/" />
+                        <Button
+                            Grid.Row="1"
+                            Command="{Binding OperatorPressedCommand}"
+                            CommandParameter="*"
+                            Text="*" />
+                        <Button
+                            Grid.Row="2"
+                            Command="{Binding OperatorPressedCommand}"
+                            CommandParameter="-"
+                            Text="-" />
+                        <Button
+                            Grid.Row="3"
+                            Command="{Binding OperatorPressedCommand}"
+                            CommandParameter="+"
+                            Text="+" />
+                        <Button
+                            Grid.Row="4"
+                            Command="{Binding OperatorPressedCommand}"
+                            CommandParameter="="
+                            Text="=" />
+                    </Grid>
                 </Grid>
             </Grid>
         </sharpnado:MaterialFrame>
