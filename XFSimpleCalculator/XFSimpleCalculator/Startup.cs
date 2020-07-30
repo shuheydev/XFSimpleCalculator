@@ -9,6 +9,7 @@ using System.Reflection;
 using System.Text;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using XFSimpleCalculator.ViewModels;
 using XFSimpleCalculator.Views;
 
 namespace XFSimpleCalculator
@@ -50,6 +51,7 @@ namespace XFSimpleCalculator
             //Add Services here
             //ex:View, ViewModel, DataService, Notification Service etc.
             //services.AddTransient<MainPage>();
+            services.AddTransient<MainPageViewModel>();
             services.AddTransient<Shell, AppShell>();
             services.AddSingleton<App>();
         }

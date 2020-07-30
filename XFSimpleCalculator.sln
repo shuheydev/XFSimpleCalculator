@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFSimpleCalculator", "XFSimpleCalculator\XFSimpleCalculator\XFSimpleCalculator.csproj", "{2819E272-DD21-45CC-9A73-E76B692F8FA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XFSimpleCalculator", "XFSimpleCalculator\XFSimpleCalculator\XFSimpleCalculator.csproj", "{2819E272-DD21-45CC-9A73-E76B692F8FA2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFSimpleCalculator.Android", "XFSimpleCalculator\XFSimpleCalculator.Android\XFSimpleCalculator.Android.csproj", "{A9E6A147-F8C5-4602-A352-861C2C3ECF48}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFSimpleCalculator.iOS", "XFSimpleCalculator\XFSimpleCalculator.iOS\XFSimpleCalculator.iOS.csproj", "{34AB2109-3F6C-4590-B850-F2D4EC750834}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLogic", "CalculatorLogic\CalculatorLogic.csproj", "{55C42683-0AD4-4B70-AC84-13FC65EFC8CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorLogic", "CalculatorLogic\CalculatorLogic.csproj", "{55C42683-0AD4-4B70-AC84-13FC65EFC8CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLogicTest", "CalculatorLogicTest\CalculatorLogicTest.csproj", "{FF640CD0-0EBF-4A25-8FFA-DA72B2DBA210}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorLogicTest", "CalculatorLogicTest\CalculatorLogicTest.csproj", "{FF640CD0-0EBF-4A25-8FFA-DA72B2DBA210}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

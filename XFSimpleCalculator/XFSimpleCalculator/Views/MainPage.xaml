@@ -43,38 +43,56 @@
                     <Button
                         Grid.Row="1"
                         Grid.Column="0"
+                        Command="{Binding NumberPressedCommand}"
+                        CommandParameter="{Binding Source={x:RelativeSource Self}, Path=Text}"
                         Text="7" />
                     <Button
                         Grid.Row="1"
                         Grid.Column="1"
+                        Command="{Binding NumberPressedCommand}"
+                        CommandParameter="{Binding Source={x:RelativeSource Self}, Path=Text}"
                         Text="8" />
                     <Button
                         Grid.Row="1"
                         Grid.Column="2"
+                        Command="{Binding NumberPressedCommand}"
+                        CommandParameter="{Binding Source={x:RelativeSource Self}, Path=Text}"
                         Text="9" />
                     <Button
                         Grid.Row="2"
                         Grid.Column="0"
+                        Command="{Binding NumberPressedCommand}"
+                        CommandParameter="{Binding Source={x:RelativeSource Self}, Path=Text}"
                         Text="4" />
                     <Button
                         Grid.Row="2"
                         Grid.Column="1"
+                        Command="{Binding NumberPressedCommand}"
+                        CommandParameter="{Binding Source={x:RelativeSource Self}, Path=Text}"
                         Text="5" />
                     <Button
                         Grid.Row="2"
                         Grid.Column="2"
+                        Command="{Binding NumberPressedCommand}"
+                        CommandParameter="{Binding Source={x:RelativeSource Self}, Path=Text}"
                         Text="6" />
                     <Button
                         Grid.Row="3"
                         Grid.Column="0"
+                        Command="{Binding NumberPressedCommand}"
+                        CommandParameter="{Binding Source={x:RelativeSource Self}, Path=Text}"
                         Text="1" />
                     <Button
                         Grid.Row="3"
                         Grid.Column="1"
+                        Command="{Binding NumberPressedCommand}"
+                        CommandParameter="{Binding Source={x:RelativeSource Self}, Path=Text}"
                         Text="2" />
                     <Button
                         Grid.Row="3"
                         Grid.Column="2"
+                        Command="{Binding NumberPressedCommand}"
+                        CommandParameter="{Binding Source={x:RelativeSource Self}, Path=Text}"
                         Text="3" />
                     <Button
                         Grid.Row="4"
@@ -84,10 +102,13 @@
                     <Button
                         Grid.Row="4"
                         Grid.Column="1"
+                        Command="{Binding NumberPressedCommand}"
+                        CommandParameter="{Binding Source={x:RelativeSource Self}, Path=Text}"
                         Text="0" />
                     <Button
                         Grid.Row="4"
                         Grid.Column="2"
+                        IsVisible="false"
                         Text="." />
                 </Grid>
                 <Grid
