@@ -1,15 +1,107 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="XFSimpleCalculator.Views.MainPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+<ContentPage
+    x:Class="XFSimpleCalculator.Views.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:shadow="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
+    xmlns:sharpnado="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
+    Shell.NavBarIsVisible="False"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Image Aspect="AspectFill" Source="my_icon.jpg" />
+        <sharpnado:MaterialFrame
+            Padding="0"
+            HasShadow="False"
+            MaterialBlurStyle="Light"
+            MaterialTheme="AcrylicBlur">
+            <Grid
+                ColumnDefinitions="3*,1*"
+                ColumnSpacing="0"
+                RowDefinitions="1*,1.5*"
+                RowSpacing="0">
+                <Grid
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    BackgroundColor="LightBlue"
+                    ColumnDefinitions="1*,1*,1*"
+                    RowDefinitions="1*,1*,1*,1*,1*">
+                    <Button
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Text="%" />
+                    <Button
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Text="CE" />
+                    <Button
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        Text="C" />
+                    <Button
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="7" />
+                    <Button
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Text="8" />
+                    <Button
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Text="9" />
+                    <Button
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        Text="4" />
+                    <Button
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Text="5" />
+                    <Button
+                        Grid.Row="2"
+                        Grid.Column="2"
+                        Text="6" />
+                    <Button
+                        Grid.Row="3"
+                        Grid.Column="0"
+                        Text="1" />
+                    <Button
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        Text="2" />
+                    <Button
+                        Grid.Row="3"
+                        Grid.Column="2"
+                        Text="3" />
+                    <Button
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        IsVisible="false"
+                        Text="" />
+                    <Button
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        Text="0" />
+                    <Button
+                        Grid.Row="4"
+                        Grid.Column="2"
+                        Text="." />
+                </Grid>
+                <Grid
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    BackgroundColor="LightPink"
+                    RowDefinitions="1*,1*,1*,1*,1*">
+                    <Button Grid.Row="0" Text="/" />
+                    <Button Grid.Row="1" Text="*" />
+                    <Button Grid.Row="2" Text="-" />
+                    <Button Grid.Row="3" Text="+" />
+                    <Button Grid.Row="4" Text="=" />
+                </Grid>
+            </Grid>
+        </sharpnado:MaterialFrame>
+    </Grid>
 </ContentPage>

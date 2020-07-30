@@ -11,14 +11,31 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Fonts\DancingScript-VariableFont_wght.ttf" />
+    <None Remove="Resources\Fonts\OpenSansCondensed-Bold.ttf" />
+    <None Remove="Resources\Fonts\OpenSansCondensed-Light.ttf" />
+    <None Remove="Resources\Fonts\OpenSansCondensed-LightItalic.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="appsettings.json" Condition="'$(Configuration)' != 'Debug' or !Exists('appsettings.Development.json')" />
     <EmbeddedResource Include="appsettings.Development.json" Link="appsettings.json" Condition="'$(Configuration)' == 'Debug' and Exists('appsettings.Development.json')" />
+    <EmbeddedResource Include="Resources\Fonts\DancingScript-VariableFont_wght.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\OpenSansCondensed-Bold.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\OpenSansCondensed-Light.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\OpenSansCondensed-LightItalic.ttf" />
   </ItemGroup>
   
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.6" />
-    <PackageReference Include="Xamarin.Forms" Version="4.7.0.1080" />
+    <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
+    <PackageReference Include="Sharpnado.Presentation.Forms" Version="1.7.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.7.0.1179" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\CalculatorLogic\CalculatorLogic.csproj" />
   </ItemGroup>
 
   <ItemGroup>

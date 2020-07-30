@@ -8,6 +8,7 @@ using Android.Widget;
 using Android.OS;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+using Sharpnado.Presentation.Forms.Droid;
 
 namespace XFSimpleCalculator.Android
 {
@@ -23,7 +24,7 @@ namespace XFSimpleCalculator.Android
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-
+            SharpnadoInitializer.Initialize();
             LoadApplication(Startup.Init(ConfigureServices));
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
