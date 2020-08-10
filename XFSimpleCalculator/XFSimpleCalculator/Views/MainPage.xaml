@@ -21,6 +21,16 @@
                 ColumnSpacing="0"
                 RowDefinitions="1*,1.5*"
                 RowSpacing="0">
+                <StackLayout Grid.Row="0">
+                    <Label
+                        FontFamily="Dancing"
+                        FontSize="54"
+                        HorizontalOptions="EndAndExpand"
+                        HorizontalTextAlignment="End"
+                        Text="{Binding Register1}"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                </StackLayout>
                 <Grid Grid.Row="1" ColumnDefinitions="3*,1*">
                     <Grid
                         Grid.Column="0"

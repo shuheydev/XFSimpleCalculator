@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using CalculatorLogic;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -51,6 +52,7 @@ namespace XFSimpleCalculator
             //Add Services here
             //ex:View, ViewModel, DataService, Notification Service etc.
             //services.AddTransient<MainPage>();
+            services.AddSingleton<Calculator>();
             services.AddTransient<MainPageViewModel>();
             services.AddTransient<Shell, AppShell>();
             services.AddSingleton<App>();
